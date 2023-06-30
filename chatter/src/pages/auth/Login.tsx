@@ -6,8 +6,6 @@ import RegisterCard from "../../components/auth/RegisterCard";
 import VeryfyUser from "./VeryfyUser";
 
 const Login = () => {
-  // const [step, setStep] = useState(0);
-
   const { pathname } = useLocation();
 
   const navigate = useNavigate();

@@ -22,11 +22,13 @@
     "@reduxjs/toolkit": "^1.9.5",
     "@types/draft-js": "^0.11.11",
     "@types/draftjs-to-html": "^0.8.1",
+    "@types/react-router-dom": "^5.3.3",
     "@types/react-draft-wysiwyg": "^1.13.4",
     "draft-js": "^0.11.7",
     "draftjs-to-html": "^0.9.1",
     "immer": "^10.0.2",
     "jwt-decode": "^3.1.2",
+    "global": "^4.4.0",
     "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -44,7 +46,8 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.4.2",
-    "yup": "^1.2.0"
+    "yup": "^1.2.0",
+    "vite-tsconfig-paths": "3.5.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
