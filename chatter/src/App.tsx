@@ -41,7 +41,6 @@ function App() {
             key={idx}
             path={path}
             element={
-              //@ts-expect-error not a jsx
               <RequiredAuth children={<Layout children={component} />} />
             }
           />
