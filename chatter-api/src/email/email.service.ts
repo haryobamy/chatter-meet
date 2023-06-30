@@ -50,7 +50,7 @@ export class EmailService {
       text: 'Email Verification',
       html: `<p>Dear User, please verify your email for Chatter project.</p>
         <p>
-            This <a href="http://localhost:8080/verify/${userId}/${userToken}">link</a> will verify your email address.
+            This <a href="http://chatter-meet-8tpi7i2df-haryobamy.vercel.app/verify/${userId}/${userToken}">link</a> will verify your email address.
         </p>
         <p>
             If you did not registered on Chatter project, you can just ignore this message and do not click on the link!
@@ -75,7 +75,7 @@ export class EmailService {
       text: 'Password Reset',
       html: `<p>Dear User, you requested password reset.</p>
         <p>
-            This <a href="http://localhost:8080/resetpassword/${userId}/${resetToken}">link</a> will help you to reset your password.
+            This <a href="http://chatter-meet-8tpi7i2df-haryobamy.vercel.app/resetpassword/${userId}/${resetToken}">link</a> will help you to reset your password.
         </p>
         <p>
             If it was not you, who requested password reset, you can just ignore this message and do not click on the link!
