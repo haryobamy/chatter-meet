@@ -32,6 +32,7 @@ const AddPost = () => {
     watch,
   } = useForm<IcreateFeeds>({
     defaultValues: feedDefaultValues,
+    //@ts-ignore
     resolver: feedsResolver,
   });
 
@@ -88,7 +89,7 @@ const AddPost = () => {
                   setValue("image", uploadedImage);
                   // console.log(uploadedImage);
                 };
-                reader.readAsDataURL(e.target.files[0]);
+                reader.readAsDataURL(e?.target?.files[0]);
               }}
             />
           </Button>

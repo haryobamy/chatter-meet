@@ -17,6 +17,7 @@ import { DB_USER } from "../../constant/https/config";
 const RegisterForm = () => {
   const { handleSubmit, control } = useForm<ISignUp>({
     defaultValues: registerDefaultValues,
+    //@ts-ignore
     resolver: registerResolver,
   });
 

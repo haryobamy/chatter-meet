@@ -17,6 +17,7 @@ import { DB_USER } from "../../constant/https/config";
 const LoginForm = () => {
   const { handleSubmit, control } = useForm<ILogin>({
     defaultValues: loginDefaultValues,
+    //@ts-ignore
     resolver: loginResolver,
   });
 
