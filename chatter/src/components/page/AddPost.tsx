@@ -82,14 +82,16 @@ const AddPost = () => {
               accept="image/*"
               multiple
               type="file"
-              onChange={(e) => {
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                 const reader = new FileReader();
                 reader.onload = () => {
                   const uploadedImage = reader.result;
                   setValue("image", uploadedImage);
                   // console.log(uploadedImage);
                 };
-                reader.readAsDataURL(e?.target?.files[0]);
+                // if (e.target.value !== null) {
+                //   reader.readAsDataURL(e?.target?.files?.[0]);
+                // }
               }}
             />
           </Button>

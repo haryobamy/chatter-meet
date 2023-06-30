@@ -41,7 +41,7 @@ const ForYou = () => {
 
   return (
     <>
-      {feeds?.map((item, idx: number) => {
+      {feeds?.map((item: any, idx: number) => {
         const { author, content, title, image, _id, likes, comments } = item;
         return (
           <Card className="shadow mt-5 p-8 " key={idx}>

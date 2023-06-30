@@ -5,7 +5,7 @@ export type IOverviewMenu = {
   key: string;
   label: string;
   path: string;
-  icon: IconType;
+  icon: any;
 };
 
 export const overviewMenu: IOverviewMenu[] = [
@@ -44,7 +44,7 @@ type ITrendingTags = {
   key: string;
   label: string;
   path: string;
-  icon: IconType;
+  icon: any;
 };
 
 export const trendingTag: ITrendingTags[] = [

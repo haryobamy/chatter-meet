@@ -12,8 +12,8 @@ function VeryfyUser() {
 
   const handleVerify = async () => {
     const verifyPayload = {
-      userId: userid,
-      token: token,
+      userId: userid || "",
+      token: token || "",
     };
     const res = await dispatch(VerifyingUser(verifyPayload));
     if (res?.payload?.verified) {
